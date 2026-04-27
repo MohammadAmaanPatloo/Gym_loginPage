@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaan Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700;800&family=Fasthand&family=Poppins:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/GYM.jpg');
+        font-family: 'Baloo Bhai 2', 'Fasthand', cursive, 'Poppins', sans-serif;
+    }
+
+    .left {
+        position: absolute;
+        left: 50px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+
+    }
+
+    .left img {
+        width: 150px;
+    }
+
+    .left div {
+        line-height: 20px;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+
+    }
+
+    .mid {
+        display: block;
+        width: 35%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 35px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 11px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', 'Fasthand', cursive, 'Poppins', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 0px 6px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid grey;
+        margin: 110px 50px;
+        padding: 40px;
+        width: 30%;
+        border-radius: 20px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', 'Fasthand', cursive, 'Poppins', sans-serif;
+        text-align: center;
+        display: block;
+        width: 380px;
+        padding: 6px;
+        border: 5px solid black;
+        margin: 14px auto;
+        font-size: 21px;
+        border-radius: 10px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+
+    p {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    span {
+        padding: 10px;
+        cursor: pointer;
+
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/GYM_logo.png" alt="">
+            <div>Lets get ready to be fit @ Lets hit the gym</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Claculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <buttton class="btn">Follow Us</buttton>
+            <buttton class="btn">Enroll Now</buttton>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of the world</h1>
+        <form action="noaction php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        <p>or Login with
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+        </p>
+
+    </div>
+</body>
+
+</html>
